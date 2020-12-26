@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(../odev2/fb_bg.jpg) no-repeat center top / cover;
+    
+}
+.kapsayici{
+    /*Flexbox kapsayıcı özellikleri */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 90%;
+    height: auto;
+    margin: auto; 
+     
+}
+
+.kapsayici > div{
+    /*Flexbox çocuk özellikleri */
+    flex: 1 1 300px;
+
+    /*Flexbox iç kapsayıcı özellikleri */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-width: 400px;
+    min-width: 200px;
+    margin: 25px; 
+    padding: 10px;
+    border-left: thin solid rgb(238, 225, 225);
+    border-top: thin solid rgb(238, 225, 225);
+    box-shadow: 10px 10px 5px rgb(161, 154, 154);
+    background-color: rgba(250, 246, 246, 0.9);
+}
+
+.kapsayici > div > img{
+    flex: 1 1 280px;
+    max-width: 90%;
+}
+
+.kapsayici > div > a{
+    flex: 1 1 50px;
+    width: 150px;
+    max-width: 200px;
+    line-height: 20px;
+    padding: 15px 0 15px 0;
+    margin-top: 20px;
+    background-color: rgb(19, 19, 82);
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bolder;
+    border-radius: 10px;
+}
+.kapsayici > div > a:hover{
+    background-image: linear-gradient(to bottom right, rgb(19, 19, 82),rgb(247, 247, 44));
+    font-size: 18px;
+    transition: 0.2s;
+}
+.kapsayici > div > h3{
+    font-family: 'Audiowide', cursive;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
